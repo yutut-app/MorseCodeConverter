@@ -1,32 +1,16 @@
-# MorseCodeConverter
+MorseCodeConverter
+概要
+このレポジトリでは、文字列をMorse Codeに変換するPythonのコマンドラインプログラムを提供しています。ユーザーが文字列を入力すると、それをMorse Codeに変換して出力します。
 
-This is a simple command-line Python program to convert alphanumeric characters into Morse Code.
+プログラムの仕組み
+プログラムは次のようなステップで動作します：
 
-## Usage
+ユーザーから文字列を入力として受け取ります。
+入力された文字列を一文字ずつ見ていき、対応するMorse Codeに変換します。この変換には事前に定義した辞書が使用されます。
+Morse Codeに変換した結果をスペース区切りで出力します。
+なお、アルファベットと数字のみがMorse Codeに変換され、その他の特殊文字は無視されます。また、元の文字列中のスペースはMorse Codeでは「/」として表現されます。
 
-1. Clone this repository
-git clone https://github.com/yourusername/MorseCodeConverter.git
-
-2. Navigate into the MorseCodeConverter directory
-cd MorseCodeConverter
-
-3. Run the program with Python
-python morse_converter.py
-
-4. When prompted, enter the string you want to convert into Morse Code.
-
-## How It Works
-
-The program uses a dictionary to map alphanumeric characters (both uppercase and lowercase) to their equivalent Morse Code. When a string is entered by the user, the program iterates over each character in the string. If the character is alphanumeric, it converts it into Morse Code using the dictionary and adds it to the final output string. Spaces in the input are also handled and represented as '/ ' in Morse Code.
-
-## Limitations
-
-This program only converts alphanumeric characters (letters and numbers). Special characters are not supported.
-
-## Contribution
-
-Feel free to fork this project, modify it and create pull requests to improve the functionality.
-
-## License
-
-This project is licensed under the MIT License.
+使い方
+レポジトリをクローンまたはダウンロードします。
+プログラムを実行します。Python 3が必要です。
+プロンプトに従って文字列を入力します。例えば、"Hello World"と入力すると、Morse Codeに変換した結果が出力されます。
